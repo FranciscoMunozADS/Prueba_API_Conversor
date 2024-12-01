@@ -1,0 +1,112 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Título principal */
+h1 {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* label */
+.label {
+  font-size: 1rem;
+  color: gray;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+/* Sección de conversión */
+.conversion-section, .options-section, .result-section {
+  background-color: floralwhite;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input del monto */
+.amount-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Select de divisa */
+.currency-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin: 10px 0;
+  background-color: white;
+  color: #333;
+}
+
+
+/* Botón convertir */
+button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+/* Resultado */
+.result-text {
+  font-size: 1.2rem;
+  color: cornflowerblue;
+  text-align: center;
+  margin: 0;
+}
+
+#result-value {
+  font-weight: bold;
+  color: black;
+}
+
+
+/* Responsividad */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .conversion-section, .options-section, .result-section {
+    width: 95%;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}

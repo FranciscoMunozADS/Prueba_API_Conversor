@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Monedas</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
+  <body>
+    <h1>Conversor de Monedas</h1>
+  
+    <!-- Sección monto a convertir -->
+    <section class="conversion-section">
+      <label for="amountInput" class="label">Ingrese el monto en CLP:</label>
+      <input type="number" id="amountInput" class="amount-input" placeholder="Ejemplo: 10000" />
+    </section>
+    
+    <!-- Sección selección de divisa -->
+    <section class="options-section">
+      <label for="currencySelect" class="label">Seleccione la moneda:</label>
+      <select class="currency-select" id="currencySelect">
+        <option value="uf">Unidad de Fomento (UF)</option>
+        <option value="dolar">Dólar estadounidense (USD)</option>
+        <option value="euro">Euro (EUR)</option>
+        <option value="bitcoin">Bitcoins</option>
+      </select>
+      <button id="btnConvert">Convertir</button>
+    </section>
+    
+    <!-- Sección de resultado -->
+    <section class="result-section">
+      <p class="result-text">Resultado: <span id="resultValue">---</span></p>
+    </section>
+  
+    <script src="./assets/javascript/script.js"></script>
+  </body>
+</html>
