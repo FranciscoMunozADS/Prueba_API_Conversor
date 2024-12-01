@@ -51,7 +51,7 @@ document.getElementById("btnConvert").addEventListener('click', async () => {
         return;
        }
 
-       
+
     /* Conversión según datos */
 
     const conversionRate = rates[selectedCurrency].valor; // Selecciona el valor de rates dentro de cada divisa seleccionada
@@ -86,7 +86,7 @@ const getHistoricalData = async (selectedCurrency) => {
 
     console.log('Datos históricos recibidos:', data);//para verificar
 
-    /* se extraen las últimas 10 fechas y valores (splice) [Datos Históricos] */
+    /* se extraen las últimas 10 fechas y valores (slice) [Datos Históricos] */
 
     const dates = data.serie.slice(0, 10).map((entry) => entry.fecha.split("T")[0]); // 'T' representa el formato de la fecha 
 
