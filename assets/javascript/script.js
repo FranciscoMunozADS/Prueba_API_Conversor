@@ -41,6 +41,10 @@ document.getElementById("btnConvert").addEventListener('click', async () => {
         alert('Ingresa un monto válido.');
         return; // si la condición no se cumple, la función no sigue ejecutándose
        }
+    if (/[.,]/.test(amount)) {
+        alert('Ingresa un monto sin puntos ni comas');
+        return;
+    }
     if (!selectedCurrency) {
         alert('Selecciona una moneda.');
         return;
